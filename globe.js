@@ -44,7 +44,8 @@ function init() {
 
 function load_demo() {
 
-    video.src = 'clips/Global.2013.spherical.webm';   
+    video.src = '/proxy.php?url=https://s3.amazonaws.com/saunby/globe-videos/Global.2013.spherical.webm';
+
     // This event listener now in localfile.js
     //    video.addEventListener( "loadedmetadata", function (e) {
     //    clip_w = this.videoWidth;
