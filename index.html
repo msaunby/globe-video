@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="globe">
+
+  <head>
+    <title>AngularJS Plunker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script> var app = angular.module('globe', ['ui.bootstrap']); </script>
+    <script src="upload.js"></script>
+    <!-- <script src="app.js"></script> -->
+  </head>
+
+ <div ng-controller="UploadController ">
+  <form>
+        <input type="file" ng-file-select="onFileSelect($files)" >
+ <!--  <input type="file" ng-file-select="onFileSelect($files)" multiple> -->
+  
+   </form>
+   <b>Preview:</b><br />
+   <i ng-hide="imageSrc">No image choosed</i>
+   <img ng-src="{{imageSrc}}" /><br/>
+   <b>Progress:</b>
+  <progress value="{{progress}}"></progress>
+     </div>
+
+</html>
