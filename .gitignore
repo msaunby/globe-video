@@ -1,0 +1,10 @@
+# ignore everything in clips
+clips/**
+
+# ignore all WEBM and MP4 files
+*.webm
+*.mp4
+
+# ignore emacs backups
+*~
+
